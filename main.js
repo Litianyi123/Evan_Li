@@ -8,8 +8,7 @@ const overlay = document.querySelector('.overlay');
 let n = 1;
 for(let i =0; i<5; i++ ){
     let str = "";
-    xxx = str.concat("images/pic",n,".jpg");;
-    console.log(xxx);
+    let xxx = str.concat("images/pic",n,".jpg");
     const newImage = document.createElement('img');
     newImage.setAttribute('src', xxx);
     thumbBar.appendChild(newImage);
