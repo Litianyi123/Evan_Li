@@ -5,10 +5,17 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Looping through images */
+let n = 1;
+for(let i =0; i<5; i++ ){
+    let str = "";
+    xxx = str.concat("images/pic",n,".jpg");;
+    console.log(xxx);
+    const newImage = document.createElement('img');
+    newImage.setAttribute('src', xxx);
+    thumbBar.appendChild(newImage);
+    n = n+1;
+}
 
-const newImage = document.createElement('img');
-newImage.setAttribute('src', xxx);
-thumbBar.appendChild(newImage);
 
 /* Wiring up the Darken/Lighten button */
 let dbutton = document.getElementById("darkbutton")
