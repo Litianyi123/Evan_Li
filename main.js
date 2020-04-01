@@ -18,16 +18,15 @@ for(let i =0; i<5; i++ ){
 
 /* Wiring up the Darken/Lighten button */
 let dbutton = document.getElementById("darkbutton")
-let ld = dbutton.getAttribute("class")
 function changeLighting() {
-    if (ld==="dark") {
-        dbutton.setAttribute("class", "light");
-        dbutton.innerHTML("Darken");
-        overlay.style.background_color = "rgba(0,0,0,0.5)"
+    if (dbutton.getAttribute("class")==="dark") {
+        dbutton.setAttribute('class', "light");
+        dbutton.textContent = "Darken";
+        overlay.style.backgroundColor = "rgba(0,0,0,0.5)"
     }
     else {
-        dbutton.setAttribute("class", "dark");
-        dbutton.innerHTML("Lighten");
-        overlay.style.background_color = "rgba(0,0,0,0)"
+        dbutton.setAttribute('class', "dark");
+        dbutton.textContent = "Lighten";
+        overlay.style.backgroundColor = "rgba(0,0,0,0)"
     }
 }
