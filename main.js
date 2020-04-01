@@ -11,6 +11,9 @@ for(let i =0; i<5; i++ ){
     let xxx = str.concat("images/pic",n,".jpg");
     const newImage = document.createElement('img');
     newImage.setAttribute('src', xxx);
+    newImage.onclick =function(){
+        displayedImage.setAttribute('src',xxx);
+    }
     thumbBar.appendChild(newImage);
     n = n+1;
 }
