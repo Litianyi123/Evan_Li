@@ -24,12 +24,12 @@ let dbutton = document.getElementById("darkbutton")
 function changeLighting() {
     if (dbutton.getAttribute("class")==="dark") {
         dbutton.setAttribute('class', "light");
-        dbutton.textContent = "Darken";
+        dbutton.textContent = "Lighten";
         overlay.style.backgroundColor = "rgba(0,0,0,0.5)"
     }
     else {
         dbutton.setAttribute('class', "dark");
-        dbutton.textContent = "Lighten";
+        dbutton.textContent = "Darken";
         overlay.style.backgroundColor = "rgba(0,0,0,0)"
     }
 }

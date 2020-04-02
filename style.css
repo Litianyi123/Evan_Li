@@ -3,7 +3,13 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  font-family: helvetica, arial, sans-serif;
+  text-align: center;
+}
+
 body {
+  line-height: 1.4;
   width: 640px;
   margin: 0 auto;
 }
@@ -14,7 +20,6 @@ body {
   width: 640px;
   height: 480px;
 }
-
 .overlay {
   position: absolute;
   top: 0;
