@@ -9,6 +9,10 @@ h2 {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   line-height: 1.4;
   width: 640px;
   margin: 0 auto;
